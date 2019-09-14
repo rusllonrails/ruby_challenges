@@ -12,8 +12,12 @@ jobs:
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "Gemfile.lock" }}
-            # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
+
+      - run:
+          name: setup_bundler
+          command: |
+            gem install bundler:2.0.2
 
       - run:
           name: install dependencies
