@@ -1,10 +1,12 @@
-require "spec_helper.rb"
-require "./samples/sequence.rb"
+# frozen_string_literal: true
 
-describe "My Enumerable Module" do
-  include_context "sequence"
+require 'spec_helper.rb'
+require './samples/sequence.rb'
 
-  it "should provide ability to iterate sequence via #map method" do
+describe 'My Enumerable Module' do
+  include_context 'with sequence'
+
+  it 'provides ability to iterate sequence via #map method' do
     res = sequence.map { |x| x + 1 }
 
     expect(res).to match_array(
@@ -12,7 +14,7 @@ describe "My Enumerable Module" do
     )
   end
 
-  it "should provide ability to iterate sequence via #each method" do
+  it 'provides ability to iterate sequence via #each method' do
     sum = 0
 
     res = sequence.each do |element|
@@ -33,20 +35,20 @@ describe "My Enumerable Module" do
     expect(res).to match_array(0..4)
   end
 
-  it "should provide ability to iterate sequence via #select method" do
+  it 'provides ability to iterate sequence via #select method' do
     res = sequence.select { |x| x > 10 }
 
     expect(res).to match_array(
       [15, 20]
     )
 
-    res = sequence.select { |x| x.even? }
+    res = sequence.select(&:even?)
 
     expect(res).to match_array(
       [0, 10, 20]
     )
 
-    res = sequence.select { |x| x.odd? }
+    res = sequence.select(&:odd?)
 
     expect(res).to match_array(
       [5, 15]

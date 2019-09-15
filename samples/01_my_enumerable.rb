@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 #
 # 01: Simpe Enumerable-like module
 #
