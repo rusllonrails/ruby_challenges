@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'spec_helper.rb'
-require './samples/03_sequence_generator.rb'
+require './challenges/03_sequence_generator.rb'
 
 describe 'My Sortable Module' do
   include_context 'with sequence'
