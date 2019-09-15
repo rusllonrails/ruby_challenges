@@ -19,3 +19,9 @@ bundle
 ```
 bundle exec rspec .
 ```
+
+## Run Rubocop check
+
+```
+bundle exec rubocop
+```
