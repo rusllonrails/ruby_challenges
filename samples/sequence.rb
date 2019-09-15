@@ -1,4 +1,6 @@
-require "./samples/01_my_enumerable.rb"
+# frozen_string_literal: true
+
+require './samples/01_my_enumerable.rb'
 
 class Sequence
   include MyEnumerable
@@ -15,13 +17,13 @@ class Sequence
 
   private
 
-    def collection
-      for i in scope_range
-        step * i
-      end
+  def collection
+    for i in scope_range
+      step * i
     end
+  end
 
-    def scope_range
-      start..(length - 1)
-    end
+  def scope_range
+    start..(length - 1)
+  end
 end

@@ -1,4 +1,6 @@
-shared_context "sequence" do
+# frozen_string_literal: true
+
+shared_context 'with sequence' do
   let(:sequence) do
     #
     # It will generate following sequence with 5 elements
