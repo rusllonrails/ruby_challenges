@@ -33,10 +33,6 @@
 #
 #   => [15, 20]
 #
-# NOTE: Reason of that module is just to try imagine
-#       that you do not have these methods in ruby implemented
-#       and try build own implementation of them. JUST FOR FUN! =)
-#
 
 module MyEnumerable
   def map

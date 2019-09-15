@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'spec_helper.rb'
-require './samples/03_sequence_generator.rb'
+require './challenges/03_sequence_generator.rb'
 
 describe 'Sequence generator' do
   it 'allows to generate sequence' do

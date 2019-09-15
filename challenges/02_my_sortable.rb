@@ -16,10 +16,6 @@
 #
 # And do 'reverse' of collection
 #
-# NOTE: Reason of that module is just to try imagine
-#       that you do not have these methods in ruby implemented
-#       and try build own implementation of them. JUST FOR FUN! =)
-#
 
 module MySortable
   def sort(compare_operator='>')

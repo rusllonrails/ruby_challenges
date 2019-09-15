@@ -25,8 +25,8 @@
 #   => [15, 20, 25, 30, 35]
 #
 
-require './samples/01_my_enumerable.rb'
-require './samples/02_my_sortable.rb'
+require './challenges/01_my_enumerable.rb'
+require './challenges/02_my_sortable.rb'
 
 class SequenceGenerator
 
