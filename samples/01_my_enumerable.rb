@@ -11,7 +11,7 @@
 #
 # Examples:
 #
-# seq = Sequence.new(0, 5, 5)
+# seq = SequenceGenerator.new(0, 5, 5)
 #
 # seq.map { |x| x }
 #
