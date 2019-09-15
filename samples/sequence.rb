@@ -1,9 +1,20 @@
 # frozen_string_literal: true
 
+#
+# Class generates simple Sequence of numbers,
+# based on 3 parameters:
+#
+# - start
+# - step
+# - length
+#
+
 require './samples/01_my_enumerable.rb'
+require './samples/02_my_sortable.rb'
 
 class Sequence
   include MyEnumerable
+  include MySortable
 
   attr_reader :start,
               :step,
@@ -18,9 +29,13 @@ class Sequence
   private
 
   def collection
+    res = []
+
     for i in scope_range
-      step * i
+      res << step * i
     end
+
+    res
   end
 
   def scope_range

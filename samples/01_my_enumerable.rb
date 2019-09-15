@@ -1,28 +1,45 @@
 # frozen_string_literal: true
 
 #
-# 01: Simpe Enumerable-like module
+# 01: Simple Enumerable-like module
 #
-# It allows to run each, map and select for sequence,
-# specied by 3 parameters:
+# It allows to run iterate collection via:
 #
-# - start
-# - step
-# - length
+# - each
+# - map
+# - select
+#
+# Examples:
+#
+# seq = Sequence.new(0, 5, 5)
+#
+# seq.map { |x| x }
+#
+#   => [0, 5, 10, 15, 20]
+#
+# seq.map { |x| x + 4 }
+#
+#   => [4, 9, 14, 19, 24]
+#
+# seq.each { |x| puts x + 3 }
+#
+#   => 3
+#   => 8
+#   => 13
+#   => 18
+#   => 23
+#
+# seq.select { |x| x > 10 }
+#
+#   => [15, 20]
+#
+# NOTE: Reason of that module is just to try imagine
+#       that you do not have these methods in ruby implemented
+#       and try build own implementation of them. JUST FOR FUN! =)
 #
 
 module MyEnumerable
   def map
-    #
-    # seq = Sequence.new(0, 5, 5)
-    # seq.map { |x| x }
-    #
-    # => [0, 5, 10, 15, 20]
-    #
-    # seq.map { |x| x + 4 }
-    #
-    # => [4, 9, 14, 19, 24]
-
     res = []
 
     for i in scope_range
@@ -33,38 +50,12 @@ module MyEnumerable
   end
 
   def each
-    #
-    # seq = Sequence.new(0, 5, 5)
-    # seq.each { |x| puts x }
-    #
-    # => 0
-    # => 5
-    # => 10
-    # => 15
-    # => 20
-    #
-    # seq.each { |x| puts x + 3 }
-    #
-    # => 3
-    # => 8
-    # => 13
-    # => 18
-    # => 23
-    #
-
     for i in scope_range
       yield step * i
     end
   end
 
   def select
-    #
-    # seq = Sequence.new(0, 5, 5)
-    # seq.select { |x| x > 10 }
-    #
-    # => [15, 20]
-    #
-
     res = []
 
     for i in scope_range
@@ -75,4 +66,5 @@ module MyEnumerable
     res
   end
 end
+
 
