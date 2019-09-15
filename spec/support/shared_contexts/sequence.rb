@@ -8,6 +8,6 @@ shared_context 'with sequence' do
     #
     # [0, 5, 10, 15, 20]
     #
-    Sequence.new(0, 5, 5)
+    SequenceGenerator.new(0, 5, 5)
   end
 end
