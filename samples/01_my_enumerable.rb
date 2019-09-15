@@ -72,25 +72,5 @@ module MyEnumerable
 
     res
   end
-
-  private
-
-    def scope_range
-      start..(length - 1)
-    end
-end
-
-class Sequence
-  include MyEnumerable
-
-  attr_reader :start,
-              :step,
-              :length
-
-  def initialize(start, step, length)
-    @start = start
-    @step = step
-    @length = length
-  end
 end
 
