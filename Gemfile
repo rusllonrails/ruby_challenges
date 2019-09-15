@@ -6,4 +6,5 @@ ruby '2.6.4'
 group :test do
   gem "rspec", '~> 3.8'
   gem "rspec_junit_formatter"
+  gem "rubocop-rspec"
 end
