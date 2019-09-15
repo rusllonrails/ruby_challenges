@@ -6,7 +6,7 @@ require './samples/sequence.rb'
 describe 'My Enumerable Module' do
   include_context 'with sequence'
 
-  it 'provides ability to iterate sequence via #map method' do
+  it 'allows to map sequence' do
     res = sequence.map { |x| x + 1 }
 
     expect(res).to match_array(
@@ -14,7 +14,7 @@ describe 'My Enumerable Module' do
     )
   end
 
-  it 'provides ability to iterate sequence via #each method' do
+  it 'allows to iterate sequence via #each' do
     sum = 0
 
     res = sequence.each do |element|
@@ -35,7 +35,7 @@ describe 'My Enumerable Module' do
     expect(res).to match_array(0..4)
   end
 
-  it 'provides ability to iterate sequence via #select method' do
+  it 'allows to select elements' do
     res = sequence.select { |x| x > 10 }
 
     expect(res).to match_array(
