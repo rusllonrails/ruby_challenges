@@ -51,7 +51,7 @@ module MyEnumerable
 
   def each
     for i in scope_range
-      yield step * i
+      yield(step * i)
     end
   end
 
