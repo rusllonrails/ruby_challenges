@@ -1,7 +1,7 @@
 Personal Ruby Challenges
 ==================================
 
-[![CircleCI](https://circleci.com/gh/rusllonrails/ruby_metaprogramming_sandbox.svg?style=svg)](https://circleci.com/gh/rusllonrails/ruby_metaprogramming_sandbox)
+[![CircleCI](https://circleci.com/gh/rusllonrails/ruby_challenges.svg?style=svg)](https://circleci.com/gh/rusllonrails/ruby_challenges)
 
 ## Dependencies
 
