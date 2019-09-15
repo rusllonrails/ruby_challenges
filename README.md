@@ -1,4 +1,4 @@
-Playing with meta-programming Ruby
+Personal Ruby Challenges
 ==================================
 
 [![CircleCI](https://circleci.com/gh/rusllonrails/ruby_metaprogramming_sandbox.svg?style=svg)](https://circleci.com/gh/rusllonrails/ruby_metaprogramming_sandbox)
