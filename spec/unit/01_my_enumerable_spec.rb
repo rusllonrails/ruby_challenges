@@ -25,7 +25,7 @@ describe 'My Enumerable Module' do
     #
     # (0 + 2) + (5 + 2) + (10 + 2) + (15 + 2) + (20 + 2) = 60
     #
-    expect(sum).to be_eql(60)
+    expect(sum).to be(60)
 
     #
     # Sequence#each should return iterating range
