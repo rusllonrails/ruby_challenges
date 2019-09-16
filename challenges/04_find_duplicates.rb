@@ -3,6 +3,9 @@
 #
 # 04: Find Duplicates in array
 #
+# Given an array with Integer values
+# you need to find all the duplicated numbers.
+#
 # Example:
 #
 # FindDuplicates.new(

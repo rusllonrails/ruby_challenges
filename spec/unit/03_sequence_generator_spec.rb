@@ -3,7 +3,7 @@
 require 'spec_helper.rb'
 require './challenges/03_sequence_generator.rb'
 
-describe 'Sequence generator' do
+describe '03: Sequence generator' do
   it 'allows to generate sequence' do
     expect(
       generate(0, 1, 5)

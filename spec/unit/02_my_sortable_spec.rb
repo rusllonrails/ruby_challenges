@@ -3,7 +3,7 @@
 require 'spec_helper.rb'
 require './challenges/03_sequence_generator.rb'
 
-describe 'My Sortable Module' do
+describe '02: My Sortable Module' do
   include_context 'with sequence'
 
   it 'allows to sort sequence' do

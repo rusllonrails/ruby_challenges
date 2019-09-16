@@ -3,18 +3,17 @@
 #
 # 02: Simple Sortable module
 #
-# It allows:
+# Image you do not have sort, max, min and reverse.
+# Try implement own simple Sortable module for collection object.
+#
+# Methods todo:
 #
 # - sort by asc
 # - sort by desc
-#
-# Fetch:
-#
 # - max
 # - min
-# - average
-#
-# And do 'reverse' of collection
+# - avg
+# - reverse
 #
 
 module MySortable

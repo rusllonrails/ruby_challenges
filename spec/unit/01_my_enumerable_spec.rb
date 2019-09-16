@@ -3,7 +3,7 @@
 require 'spec_helper.rb'
 require './challenges/03_sequence_generator.rb'
 
-describe 'My Enumerable Module' do
+describe '01: My Enumerable Module' do
   include_context 'with sequence'
 
   it 'allows to map sequence' do

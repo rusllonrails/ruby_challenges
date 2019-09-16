@@ -3,7 +3,7 @@
 require 'spec_helper.rb'
 require './challenges/04_find_duplicates.rb'
 
-describe 'Find duplicates' do
+describe '04: Find duplicates' do
   it 'detects duplicates in array' do
     expect(
       duplicates(
