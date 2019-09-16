@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'spec_helper.rb'
 require './challenges/06_palindromic_primes.rb'
 
