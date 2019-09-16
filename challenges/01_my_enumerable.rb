@@ -3,7 +3,10 @@
 #
 # 01: Simple Enumerable-like module
 #
-# It allows to run iterate collection via:
+# Image you do not have each, map and select.
+# Try implement own simple Enumerable module for collection object.
+#
+# Methods todo:
 #
 # - each
 # - map
