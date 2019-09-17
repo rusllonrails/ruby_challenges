@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-require 'spec_helper.rb'
-require './challenges/05_valid_words_checker.rb'
+require 'spec_helper'
+require './challenges/05_valid_words_checker'
 
 describe '05: Valid words checker' do
   it 'detects if word is valid' do

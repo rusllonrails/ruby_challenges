@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-require 'spec_helper.rb'
-require './challenges/07_rotate_by_13_places.rb'
+require 'spec_helper'
+require './challenges/07_rotate_by_13_places'
 
 describe '07: Rotate by 13 places (ROT13)' do
   let(:original_array) do
