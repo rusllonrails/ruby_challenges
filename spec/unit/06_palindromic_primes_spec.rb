@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-require 'spec_helper.rb'
-require './challenges/06_palindromic_primes.rb'
+require 'spec_helper'
+require './challenges/06_palindromic_primes'
 
 describe '06: Palindromic Primes generation' do
   it 'returns first 5 palindromic primes' do

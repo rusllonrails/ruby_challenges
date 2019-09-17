@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-require 'spec_helper.rb'
-require './challenges/04_find_duplicates.rb'
+require 'spec_helper'
+require './challenges/04_find_duplicates'
 
 describe '04: Find duplicates' do
   it 'detects duplicates in array' do
