@@ -10,3 +10,7 @@ group :test do
   gem 'rspec_junit_formatter'
   gem 'rubocop-rspec'
 end
+
+group :development do
+  gem 'pry', '~> 0.12.2'
+end
