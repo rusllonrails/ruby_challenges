@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 #
-# 17: Multiples of 3 or 5
+# 18: Multiples of 3 or 5
 #
 # BRIEF:
 #
