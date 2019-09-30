@@ -13,4 +13,6 @@ end
 
 group :development do
   gem 'pry', '~> 0.12.2'
+  gem 'guard'
+  gem 'guard-shell'
 end

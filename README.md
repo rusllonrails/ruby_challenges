@@ -25,3 +25,9 @@ bundle exec rspec .
 ```
 bundle exec rubocop
 ```
+
+## Debug with Guard
+
+```
+bundle exec guard
+```
