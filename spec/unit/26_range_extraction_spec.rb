@@ -6,7 +6,7 @@ require './challenges/26_range_extraction'
 describe '26: Range Extraction' do
   it 'returns a correctly formatted string in the range format' do
     expect(
-      format(
+      convert(
         [-21,-20,-19,-17,-15,2,3,4,5,21,45,65,66,67,70]
       )
     ).to be_eql(
@@ -14,7 +14,7 @@ describe '26: Range Extraction' do
     )
 
     expect(
-      format(
+      convert(
         [-6, -3, -2, -1, 0, 1, 3, 4, 5, 7, 8, 9, 10, 11, 14, 15, 17, 18, 19, 20]
       )
     ).to be_eql(
@@ -24,9 +24,9 @@ describe '26: Range Extraction' do
 
   private
 
-  def format(array)
+  def convert(array)
     RangeExtraction.new(
       array
-    ).format
+    ).convert
   end
 end

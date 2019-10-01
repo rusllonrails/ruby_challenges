@@ -37,7 +37,7 @@ class RangeExtraction
     @array = array
   end
 
-  def format
+  def convert
     @res = []
     @current_range = []
 
@@ -55,7 +55,7 @@ class RangeExtraction
       end
     end
 
-    convert_to_str
+    format_to_str
   end
 
   private
@@ -70,17 +70,9 @@ class RangeExtraction
     @current_range = []
   end
 
-  def convert_to_str
+  def format_to_str
     @res.map do |item|
-      if item.is_a?(Array)
-        if item.size > 2
-          "#{item.min}-#{item.max}"
-        else
-          item
-        end
-      else
-        item
-      end
+      item.is_a?(Array) && item.size > 2 ? "#{item.min}-#{item.max}" : item
     end.flatten.join(',')
   end
 end
